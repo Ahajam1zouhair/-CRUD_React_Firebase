@@ -1,0 +1,6 @@
+const renderCheckboxSelection = (options, selectedOptions) => {
+    const selectedItems = options.filter(option => selectedOptions.includes(option));
+    return selectedItems.join(', ');
+  };
+
+  <td>{renderCheckboxSelection(["Technicien", "Technicien Spécialisé"], formData.niveauFormation)}</td>
